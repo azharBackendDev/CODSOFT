@@ -15,3 +15,17 @@ document.querySelectorAll('nav a').forEach(link => {
       }
   });
 });
+
+// document.addEventListener('submit', ()=>{
+//     const name = document.getElementById("name").value;
+//     const email = document.getElementById("email").value;
+//     const msg = document.getElementById("msg").value;
+
+//     if(!(email && name)) return alert('Name and emial are required');
+
+//     alert(`form submit sucessfully\n\n name:${name}\n\n email:${email}\n\n msg:${msg}`);
+    
+    
+//      window.location('#home');
+    
+// })

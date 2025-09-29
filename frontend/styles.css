@@ -48,7 +48,7 @@ header nav a:hover {
 header nav .download-btn {
   margin-left: -2%; 
   padding: 0.5rem 0.7rem; 
-  background-color: #e74c3c;
+  background-color: #3a8ae6;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -59,14 +59,14 @@ header nav .download-btn {
 }
 
 header nav .download-btn:hover {
-  background-color: #c0392b;
+  background-color: #75a5ec;
 }
 
 
 /* Hero Section */
 #hero {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
   align-items: center;
   height: 100vh;
   max-width: 1200px;
@@ -87,20 +87,20 @@ header nav .download-btn:hover {
 }
 
 .hero-content .highlight {
-  color: #e74c3c;
+  color: #1856ff;
   font-weight: bold;
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  color: #000;
+  color: #111827;
   margin-bottom: 2rem;
 }
 
 .hero-content .btn {
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #e74c3c;
+  background-color: #092eff;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -108,12 +108,14 @@ header nav .download-btn:hover {
 }
 
 .hero-content .btn:hover {
-  background-color: #c0392b;
+  background-color: #0a31e1;
+  box-shadow: 1px 3px 3px rgb(131, 179, 235);
 }
 
 .hero-image {
   max-width: 50%;
-  text-align: center;
+  margin-top: 3rem;
+  /* text-align: center; */
 }
 
 .hero-image img {
@@ -126,8 +128,19 @@ header nav .download-btn:hover {
   transform: translateY(-10px); 
 }
 
+/* About section text  */
+.about-text{
+  padding: 1rem;
+  font-size: smaller;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+
+
 /* Skills Section */
 #skills {
+  
   text-align: center;
   padding: 4rem 2rem;
   background-color: #f9f9f9;
@@ -150,6 +163,7 @@ header nav .download-btn:hover {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
+  width: 6rem;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -175,11 +189,13 @@ header nav .download-btn:hover {
 
 /* Project section */
 #projects {
+ 
   margin: 2rem 0;
 }
 
 .project {
   display: flex;
+ 
   align-items: center; 
   justify-content: space-between; 
   padding: 20px;
@@ -314,7 +330,7 @@ footer p {
   /* Adjust Project Section */
   .project {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .project-text {
@@ -332,8 +348,9 @@ footer p {
 @media screen and (max-width: 480px) {
   /* Adjust Hero Section */
   #hero {
-    padding: 2rem;
+    padding: 8rem 0;
     text-align: center;
+    gap: 1rem;
   }
 
   .hero-content h1 {

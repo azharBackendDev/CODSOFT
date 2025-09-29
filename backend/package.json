@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Azhar's portfolio Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "Azhar Akhtar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.1"
+  }
+}
