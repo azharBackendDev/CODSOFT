@@ -1,5 +1,6 @@
-const URL = 'http://localhost:5000';
 
+
+const URL = 'http://localhost:5000';
 
 // Smooth scroll for links
 document.querySelectorAll('nav a').forEach(link => {

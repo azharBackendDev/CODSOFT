@@ -29,6 +29,14 @@ app.post("/contact",async (req, res) => {
  }
 });
 
+app.all('/search',async(req,res)=>{
+
+  if(req.method !== 'QUERY') return req.status(404).json({msg:"invalid requerst"})
+  const {name,product} = req.body;
+  console.log(`name:${name},product:${product}`);
+  
+})
+
 app.listen(5000, () => {
   console.log("server is listenning on 5000");
 });

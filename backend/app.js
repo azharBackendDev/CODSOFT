@@ -15,7 +15,8 @@ const  transporter = nodemailer.createTransport({
 const router = e.Router();
 const app = e();
 app.use(cors({
-    origin:["http://127.0.0.1:5500","http://localhost:5500"]
+    origin:["http://127.0.0.1:5500","http://localhost:5500"],
+
 }))
 app.use(e.json())
 app.use(e.urlencoded({extended:true}))
